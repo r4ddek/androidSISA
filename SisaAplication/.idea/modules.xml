@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AndroidMask-1.0.0/AndroidMask-1.0.0.iml" filepath="$PROJECT_DIR$/AndroidMask-1.0.0/AndroidMask-1.0.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SisaAplication.iml" filepath="$PROJECT_DIR$/SisaAplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/maskededittext/maskededittext.iml" filepath="$PROJECT_DIR$/maskededittext/maskededittext.iml" />
+    </modules>
+  </component>
+</project>

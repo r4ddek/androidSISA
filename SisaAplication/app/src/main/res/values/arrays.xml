@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="outro">#616161</color>
+    <color name="Ensiso">#7cb342</color>
+    <color name="ARQ">#fb8c00</color>
+    <color name="FC">#0277bd</color>
+    <color name="optativa">#4e342e</color>
+    <color name="accent">#46ac33</color>
+    <color name="red">#d42116</color>
+
+    <array name="areas"> <!-- areas: 0-default 1-ENSISO 2-Arquitetura 3-FC -->
+        <item>@color/outro</item>
+        <item>@color/Ensiso</item>
+        <item>@color/ARQ</item>
+        <item>@color/FC</item>
+    </array>
+
+    <array name="switchCor">
+        <item>@color/colorAccent</item>
+        <item>@color/red</item>
+    </array>
+
+    <array name="areaCadstro">
+        <item>FC</item>
+        <item>Ensiso</item>
+        <item>ARQ</item>
+    </array>
+</resources>

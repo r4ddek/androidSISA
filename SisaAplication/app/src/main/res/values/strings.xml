@@ -1,0 +1,163 @@
+<resources>
+    <string name="app_name">Sisa</string>
+
+    <!-- Strings Globais -->
+
+    <string name="action_voltar">Back</string>
+    <string name="action_continuar">Continue</string>
+    <string name="action_ok">OK</string>
+    <string name="action_registrar">Register</string>
+    <string name="action_entrar">Sign in</string>
+    <string name="action_pronto">Done</string>
+
+    <!-- nomes das telas internas-->
+    <string name="title_activity_home"> </string>
+    <string name="title_activity_feedback">Enviar Mensagem</string>
+    <string name="title_activity_sugestao">Suas Sugestões</string>
+    <string name="title_activity_grade">Grade de Horário</string>
+
+    <!-- Strings relacionadas a tela inicial -->
+    <string name="label_bemvindo">Para continuar por favor faça login ou cadastre-se.</string>
+    <string name="label_sisaInfo">Sisa can help you achieve graduation!</string>
+
+    <!-- Strings relacionadas ao login -->
+    <string name="prompt_email_login">Email</string>
+    <string name="prompt_senha_login">Password</string>
+    <string name="error_email_invalido_login">This email address is invalid</string>
+    <string name="error_senha_invalida_login">This password is too short</string>
+    <string name="error_senha_errada_login">This password is incorrect</string>
+    <string name="error_campo_obrigatorio_login">This field is required</string>
+    <string name="permission_contatos_login">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <!-- Strings relacionadas a home -->
+
+    <string name="home_drawer">Home</string>
+    <string name="sugestion_drawer">Sugestions</string>
+    <string name="feedback_drawer">Feedback</string>
+    <string name="discipline_drawer">Disciplines</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- Strings relacionadas ao cadastro1 -->
+
+    <string name="label_info_cadastro1">Hello! Before we start we will need to collect some data.</string>
+    <string name="prompt_CPF_cadastro1">CPF</string>
+    <string name="prompt_nome_cadastro1">Name</string>
+    <string name="prompt_ingresso_cadastro1">Admission: </string>
+    <string name="prompt_curso_cadastro1">Course: </string>
+    <string name="spinner_curso_cadastro1">Course</string>
+    <string name="prompt_disciplina_favorita_cadastro1">One of my favourite subjects is:</string>
+    <string name="label_tempo_cadastro1">I do NOT have spare time at these times:</string>
+    <string name="label_manha_cadastro1">In the morning</string>
+    <string name="label_tarde_cadastro1">Noon - 2pm</string>
+    <string name="label_tarde2_cadastro1">In the afternoon</string>
+    <string name="label_noite_cadastro1">In the evening</string>
+    <string name="spinner_title_cadastro1">Pick one</string>
+    <string name="label_dedicacao_cadastro1">I have full time dedication to college.</string>
+    <string name="prompt_csenha_cadastro1">Repeat password</string>
+    <string name="edit_para_feedback">To</string>
+    <string name="edit_assunto_feedback">Subject</string>
+    <string name="edit_mensagem_feedback">Your Message</string>
+    <string name="text_titulo_feedback">Send a message to your coordinator</string>
+    <string name="text_grade_obrigatoria">These are your mandatory disciplines: </string>
+    <string name="text_home_vazio">You do not have anything to show at the moment</string>
+    <string name="modificacao_drawer">Modifications</string>
+
+    <string name="error_cpf_invalida">Dang! Invalid SSN. Please make sure your SSN is correct.</string>
+    <string name="error_nome_invalida">Oops. It seems you forgot to type your name. Please enter at least your first name.</string>
+    <string name="error_email_invalida">Have you forgotten something? It seems that you either forgot to type your email or it is missing something.</string>
+    <string name="error_senha_invalida">Hmm, that is an invalid password. Please make sure your password is at least 8 characters long.</string>
+    <string name="error_rsenha_invalida">Uhh&#8230; Please make sure your passwords match!</string>
+
+    <string-array name="array_ingresso_cadastro1">
+        <item>2010.1</item>
+        <item>2010.2</item>
+        <item>2011.1</item>
+        <item>2011.2</item>
+        <item>2012.1</item>
+        <item>2012.2</item>
+        <item>2013.1</item>
+        <item>2013.2</item>
+    </string-array>
+
+    <string-array name="array_assunto_feedback">
+        <item>Discipline Sugestion</item>
+        <item>Complaint</item>
+        <item>Discilpine</item>
+
+    </string-array>
+
+    <string-array name="array_curso_cadastro1">
+        <item>Computer Science</item>
+
+    </string-array>
+
+
+    <string-array name="array_num_reprovacoes">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+
+    </string-array>
+
+    <string-array name="array_periodo_trancado">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="array_disciplina_cadastro1">
+        <item>Computer Science Fundamentals</item>
+        <item>Software Systems</item>
+        <item>Computer and Network Architecture</item>
+    </string-array>
+
+    <string name="title_activity_ver_sugestoes">VerSugestoesActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- Strings relacionadas ao cadastro2 -->
+
+    <string name="label_info_cadastro2">Now please click on the cards below and fill in the details on each subject you have
+        taken so far by ticking the boxes where appropriate, and informing the times you have failed
+        a specific subject using the counter.</string>
+
+    <!-- Strings relacioandas ao cardView de Disciplinas -->
+
+    <string name="label_info_cardView">* If you have either passed and failed this subject, please check both boxes.</string>
+    <string name="checkbox_aprovado_cardView">Passed</string>
+    <string name="checkbox_reprovado_cardView">Failed</string>
+    <string name="label_numReprovacoes_cardView">Times failed:</string>
+
+    <!-- Strings relacioandas ao detalhe das disciplinas -->
+    <string name="label_horario_dialog">Horários:</string>
+    <string name="label_professor_dialog">Semester:</string>
+
+    <string name="btn_sugestao_home">Sugestion</string>
+    <string name="btn_matricula_home">My Classes</string>
+
+    <!-- Strings Home -->
+    <string name="welcome">Welcome,</string>
+    <string name="expl">This is the quick access screen.</string>
+    <string name="expl2">Use the buttons on screen to access the main functionalities. Additional functions can be found by swiping the menu.</string>
+    <string name="classes">My classes</string>
+    <string name="generate">New Suggestions</string>
+    <string name="record">My Academic Records</string>
+    <string name="course">Subjects</string>
+    <string name="suggestions">Previous Suggestions</string>
+
+</resources>

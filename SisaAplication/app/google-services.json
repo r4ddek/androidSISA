@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "617720143702",
+    "firebase_url": "https://sisa-53225.firebaseio.com",
+    "project_id": "sisa-53225",
+    "storage_bucket": "sisa-53225.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:617720143702:android:6615b12015bf9cbf",
+        "android_client_info": {
+          "package_name": "sisa.ufrpe.br.sisaandroid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "617720143702-mjbdcmtn7pt2rpt89r5v9sa048qc7t07.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZt3atok331TSMEKZ2QP12pEbijV1vnag"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

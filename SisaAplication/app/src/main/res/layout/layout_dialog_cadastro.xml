@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:background="@android:color/transparent">
+
+    <android.support.v7.widget.CardView
+
+        android:layout_width="match_parent"
+        app:cardBackgroundColor="#ffffff"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="4dp"
+        android:id="@+id/card_disciplinas"
+        android:clickable="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_height="270dp">
+
+        <RelativeLayout
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/layoutTitulo"
+                android:layout_marginBottom="7dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:background="@color/errorColor"
+                    android:id="@+id/corTrilha"
+                    android:layout_height="15dp"
+                    android:layout_alignParentTop="true" />
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tag"
+                    app:cardBackgroundColor="#551A8B"
+                    android:layout_marginLeft="5dp"
+                    android:layout_below="@id/corTrilha"
+                    android:layout_marginTop="7dp">
+
+                    <TextView
+                        android:text="14119 - LC1 "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tag_codigo"
+                        android:textStyle="normal|bold"
+                        android:textColor="@color/cardview_light_background"
+                        android:alpha="0.8"
+                        android:background="@android:color/transparent" />
+                </android.support.v7.widget.CardView>
+
+                <TextView
+                    android:text="Desenvolvimento de Aplicações Móveis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/titulo"
+                    android:textAppearance="@style/TextAppearance.AppCompat"
+                    android:textSize="24sp"
+                    android:layout_below="@id/tag"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@android:color/transparent"
+                    android:textColor="#000000" />
+
+                <View
+                    android:id="@+id/separator"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/darker_gray"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_below="@id/titulo"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                            android:layout_width="match_parent"
+                android:layout_below="@id/layoutTitulo"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginRight="7dp"
+
+                            android:id="@+id/layout_hidden_info"
+                android:layout_height="200dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/text_descricao"
+                            android:textColor="?attr/colorButtonNormal"
+                            android:text=""
+                            android:textAlignment="textStart"
+                            android:textStyle="normal|italic"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginTop="10dp" />
+
+                        <TextView
+                            android:text="@string/label_info_cardView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/text_descricao_disciplina"
+                            android:textSize="10sp"
+                            android:textColor="@color/cardview_dark_background"
+                            android:layout_marginTop="10dp"
+                            android:layout_below="@id/text_descricao"
+                            android:layout_centerInParent="true"/>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radiog_aprovado_reprovado"
+                    android:layout_below="@id/text_descricao_disciplina"
+                    android:orientation="horizontal">
+
+                        <RadioButton
+                            android:text="@string/checkbox_aprovado_cardView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/radioAprovado"
+                            android:textColor="?attr/colorButtonNormal"
+                            android:background="@color/cardview_light_background"
+                            android:buttonTint="@color/colorAccent"
+                            android:layout_marginStart="2dp"
+                            android:textSize="12sp" />
+
+                        <RadioButton
+                            android:text="@string/checkbox_reprovado_cardView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/radioReprovado"
+                            android:textColor="?attr/colorButtonNormal"
+                            android:background="@color/cardview_light_background"
+                            android:buttonTint="@color/errorColor"
+                            android:layout_marginStart="2dp"
+                            android:textSize="12sp" />
+
+                        </RadioGroup>
+
+                <Button
+                    android:text="Adicionar Disciplina"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    style="?android:textAppearanceSmall"
+                    android:textStyle="bold"
+                    android:backgroundTint="@color/colorAccent"
+                    android:id="@+id/btnAdicionarDisciplina" />
+
+                <CheckBox
+                    android:text="Acompanhado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkBox"
+                    tools:text="Acompanhado"
+                    android:clickable="false"
+                    app:buttonTint="@color/ARQ"
+                    android:textColor="@color/cardview_dark_background"
+                    android:layout_below="@+id/text_descricao_disciplina"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="8dp"
+                    android:checked="false"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

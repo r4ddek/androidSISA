@@ -1,0 +1,307 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="2dp"
+    android:background="#ffffff">
+
+    <ImageView
+        android:layout_width="match_parent"
+        app:srcCompat="@drawable/sisa_header"
+        android:id="@+id/imageView4"
+        android:alpha=".3"
+        android:layout_height="180dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="10dp" />
+
+
+    <TextView
+        android:text="@string/label_info_cadastro1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColorPrimary"
+        android:id="@+id/label_start"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="200dp" />
+
+    <View
+        android:id="@+id/separator1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/textColorPrimary"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/label_start" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/prompt_cpf"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@android:color/background_dark"
+        style="@style/Widget.Design.TextInputLayout"
+        android:layout_below="@id/separator1"
+        android:background="@android:color/transparent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <AutoCompleteTextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_CPF_cadastro1"
+            android:inputType="number"
+            android:maxLines="1"
+            android:singleLine="true"
+
+            android:foregroundTint="#000000"
+            android:textColor="@color/textColorPrimary"
+            android:textColorLink="#46ac33"
+            android:popupBackground="@color/colorAccent"
+            android:backgroundTint="@color/cardview_dark_background"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="50dp"
+            android:textSize="24sp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/prompt_nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@android:color/background_dark"
+        style="@style/Widget.Design.TextInputLayout"
+        android:layout_below="@id/prompt_cpf"
+        android:background="@android:color/transparent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_nome_cadastro1"
+            android:inputType="textPersonName"
+            android:maxLines="1"
+            android:singleLine="true"
+
+            android:foregroundTint="#000000"
+            android:textColor="#000000"
+            android:textColorLink="#46ac33"
+            android:backgroundTint="@color/cardview_dark_background"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="50dp"
+            android:textSize="24sp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/prompt_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@android:color/background_dark"
+        style="@style/Widget.Design.TextInputLayout"
+        android:layout_below="@id/prompt_nome"
+        android:background="@android:color/transparent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_email_login"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:singleLine="true"
+
+            android:foregroundTint="#000000"
+            android:textColor="#000000"
+            android:textColorLink="#46ac33"
+            android:backgroundTint="@color/cardview_dark_background"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="50dp"
+            android:textSize="24sp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/prompt_senha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@android:color/background_dark"
+        style="@style/Widget.Design.TextInputLayout"
+        android:layout_below="@id/prompt_email"
+        android:background="@android:color/transparent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <AutoCompleteTextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_senha_login"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLine="true"
+
+            android:foregroundTint="#000000"
+            android:textColor="#000000"
+            android:textColorLink="#46ac33"
+            android:backgroundTint="@color/cardview_dark_background"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="50dp"
+            android:textSize="24sp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/prompt_rSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@android:color/background_dark"
+        style="@style/Widget.Design.TextInputLayout"
+        android:layout_below="@id/prompt_senha"
+        android:background="@android:color/transparent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <AutoCompleteTextView
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/prompt_csenha_cadastro1"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:singleLine="true"
+
+            android:foregroundTint="#000000"
+            android:textColor="#000000"
+            android:textColorLink="#46ac33"
+            android:backgroundTint="@color/cardview_dark_background"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="50dp"
+            android:textSize="24sp" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <View
+        android:id="@+id/separator2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/textColorPrimary"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@id/prompt_rSenha" />
+
+    <TextView
+        android:text="@string/prompt_curso_cadastro1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:layout_below="@id/separator2"
+        android:id="@+id/label_curso_cadastro1"
+        android:textSize="24sp"
+        android:layout_marginTop="50dp"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent" />
+
+    <TextView
+        android:text="@string/prompt_ingresso_cadastro1"
+        android:layout_width="wrap_content"
+        android:textColor="#000000"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerCursoCadastro"
+        android:id="@+id/label_admissao_cadastro1"
+        android:textSize="24sp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:layout_centerInParent="true"/>
+
+    <Spinner
+        android:layout_height="wrap_content"
+        android:entries="@array/array_ingresso_cadastro1"
+        android:prompt="@string/spinner_title_cadastro1"
+        android:layout_below="@id/label_admissao_cadastro1"
+        android:layout_centerInParent="true"
+        android:id="@+id/spinnerPeriodoIngresso"
+        style="@style/spinner_style"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="300dp" />
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label_favorita_cadastro1"
+        android:layout_centerInParent="true"
+        android:entries="@array/array_disciplina_cadastro1"
+        android:prompt="@string/spinner_title_cadastro1"
+        android:id="@+id/spinnerDisciplinaFavorita"
+        android:layout_marginTop="10dp"
+        style="@style/spinner_style"/>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/prompt_disciplina_favorita_cadastro1"
+        android:textColor="#000000"
+        android:id="@+id/label_favorita_cadastro1"
+        android:textSize="24sp"
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/spinnerPeriodoIngresso"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp" />
+
+    <Button
+
+        style="?android:textAppearanceSmall"
+        android:layout_height="wrap_content"
+        android:text="@string/action_voltar"
+        android:textStyle="bold"
+        android:backgroundTint="#d42116"
+        android:id="@+id/btVoltarCadastro"
+        android:layout_below="@+id/btContinuarCadastro"
+        android:layout_width="500dp"
+        android:layout_centerInParent="true"
+        android:textSize="18sp" />
+
+    <Button
+
+        style="?android:textAppearanceSmall"
+        android:layout_height="wrap_content"
+        android:text="@string/action_continuar"
+        android:textStyle="bold"
+        android:backgroundTint="@color/colorAccent"
+        android:id="@+id/btContinuarCadastro"
+        android:layout_marginTop="100dp"
+        android:layout_width="500dp"
+        android:layout_below="@+id/spinnerDisciplinaFavorita"
+        android:layout_alignStart="@+id/btVoltarCadastro"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/spinnerCursoCadastro"
+        android:entries="@array/array_curso_cadastro1"
+        android:prompt="@string/spinner_title_cadastro1"
+        style="@style/spinner_style"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/label_curso_cadastro1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:layout_width="300dp" />
+
+</RelativeLayout>
+</ScrollView>

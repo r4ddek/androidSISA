@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/sideNav">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/home_drawer" />
+        <item
+            android:id="@+id/nav_feedback"
+            android:icon="@drawable/ic_feedback"
+            android:title="@string/feedback_drawer" />
+        <item
+            android:id="@+id/nav_sugestion"
+            android:icon="@drawable/ic_sugestion"
+            android:title="@string/sugestion_drawer" />
+        <item
+            android:id="@+id/nav_discipline"
+            android:icon="@drawable/ic_discipline"
+            android:title="@string/discipline_drawer" />
+        <item
+            android:id="@+id/nav_modificacao"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="@string/modificacao_drawer"/>
+    </group>
+
+</menu>

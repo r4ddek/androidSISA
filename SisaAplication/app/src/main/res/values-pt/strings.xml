@@ -1,0 +1,127 @@
+<resources>
+    <string name="app_name">Sisa</string>
+
+    <!-- Strings Globais -->
+
+    <string name="action_voltar">Voltar</string>
+    <string name="action_continuar">Continuar</string>
+    <string name="action_ok">OK</string>
+    <string name="action_registrar">Registrar</string>
+    <string name="action_entrar">Entrar</string>
+    <string name="action_pronto">Pronto</string>
+
+    <!-- nomes das telas internas-->
+    <string name="title_activity_home">Resumo do Aluno</string>
+    <string name="title_activity_feedback">Enviar Mensagem</string>
+    <string name="title_activity_sugestao">Suas Sugestões</string>
+    <string name="title_activity_grade">Grade de Horário</string>
+
+
+    <!-- Strings relacionadas a tela inicial -->
+    <string name="label_bemvindo"></string>
+    <string name="label_sisaInfo">Sisa pode lhe ajudar a se formar!</string>
+
+    <!-- Strings relacionadas ao login -->
+    <string name="prompt_email_login">Email</string>
+    <string name="prompt_senha_login">Senha</string>
+    <string name="error_email_invalido_login">Email invalido</string>
+    <string name="error_senha_invalida_login">Senha invalida</string>
+    <string name="error_senha_errada_login">Senha incorreta</string>
+    <string name="error_campo_obrigatorio_login">Campo obrigatório</string>
+    <string name="permission_contatos_login">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <!-- Strings relacionadas a home -->
+
+    <string name="home_drawer">Página inicial</string>
+    <string name="sugestion_drawer">Sugestões</string>
+    <string name="feedback_drawer">Comentários</string>
+    <string name="discipline_drawer">Disciplinas</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Configurações</string>
+
+    <!-- Strings relacionadas ao cadastro1 -->
+
+    <string name="label_info_cadastro1">Olá! Antes de começar, vamos precisar de algumas informações.</string>
+    <string name="prompt_CPF_cadastro1">CPF</string>
+    <string name="prompt_nome_cadastro1">Nome</string>
+    <string name="prompt_ingresso_cadastro1">Ano de ingresso: </string>
+    <string name="prompt_curso_cadastro1">Curso: </string>
+    <string name="spinner_curso_cadastro1">Curso</string>
+    <string name="prompt_disciplina_favorita_cadastro1">Uma das minhas disciplinas favoritas é:</string>
+    <string name="label_tempo_cadastro1">Eu NÃO tenho tempo livre durante:</string>
+    <string name="label_manha_cadastro1">Manhã</string>
+    <string name="label_tarde_cadastro1">Meio dia - 14:00</string>
+    <string name="label_tarde2_cadastro1">Tarde</string>
+    <string name="label_noite_cadastro1">15+ horas</string>
+    <string name="spinner_title_cadastro1">Escolha um</string>
+    <string name="label_dedicacao_cadastro1">Eu tenho a dedicação em tempo integral para a faculdade.</string>
+    <string name="prompt_csenha_cadastro1">Digite a senha novamente</string>
+    <string name="edit_para_feedback">Para</string>
+    <string name="edit_assunto_feedback">Assunto</string>
+    <string name="edit_mensagem_feedback">Sua mensagem</string>
+    <string name="text_titulo_feedback">Envie uma mensagem para o coordenador</string>
+    <string name="text_grade_obrigatoria">Essas são suas disciplinas obrigatórias: </string>
+    <string name="modificacao_drawer">Modificações</string>
+
+    <string-array name="array_ingresso_cadastro1">
+        <item>2010.1</item>
+        <item>2010.2</item>
+        <item>2011.1</item>
+        <item>2011.2</item>
+        <item>2012.1</item>
+        <item>2012.2</item>
+        <item>2013.1</item>
+        <item>2013.2</item>
+    </string-array>
+
+    <string-array name="array_assunto_feedback">
+        <item>Sugestões de disciplinas</item>
+        <item>Reclamação</item>
+        <item>Disciplina</item>
+
+    </string-array>
+
+    <string-array name="array_curso_cadastro1">
+        <item>Ciência da computação</item>
+
+    </string-array>
+
+    <string-array name="array_disciplina_cadastro1">
+        <item>Arquitetura e Redes de Computadores</item>
+        <item>Ensino de Sistemas de Software</item>
+        <item>Fundamentos da Computação</item>
+
+    </string-array>
+
+    <string name="title_activity_ver_sugestoes">VerSugestoesActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- Strings relacionadas ao cadastro2 -->
+
+    <string name="label_info_cadastro2">Por favor, preencha as informações das disciplinas estudadas até o momento,
+        selecionando a caixa de verificação apropriada e informando a quantidade de reprovações na disciplina.</string>
+
+    <!-- Strings relacioandas ao cardView de Disciplinas -->
+
+        <string name="label_info_cardView">* Se você reprovou e depois foi aprovado na disciplina,
+            por favor, selecione as duas caixas de verificação.</string>
+    <string name="checkbox_aprovado_cardView">Aprovado</string>
+    <string name="checkbox_reprovado_cardView">Reprovado</string>
+    <string name="label_numReprovacoes_cardView">Número de reprovações:</string>
+
+    <array name="spinner_numReprovacoes">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </array>
+
+    <string name="btn_sugestao_home">Gerar Sugestão</string>
+    <string name="btn_matricula_home">Minha Matrícula</string>
+
+</resources>

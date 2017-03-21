@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_cadastro2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="sisa.ufrpe.br.sisaandroid.Cadastro2Activity"
+    android:background="#ffffff">
+
+    <ImageView
+        android:layout_width="match_parent"
+        app:srcCompat="@drawable/sisa_footer"
+        android:id="@+id/imageView4"
+        android:alpha=".3"
+        android:layout_height="180dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/label_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_info_cadastro2"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="10sp"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/separator"
+        android:layout_alignParentStart="true" />
+
+    <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView_disciplinas_cadastro2"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:layout_below="@id/label_info"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btConfirmarCadastro2"
+            android:layout_marginTop="5dp">
+            <!--android:layout_above="@id/btConfirmarCadastro2">-->
+
+        </android.support.v7.widget.RecyclerView>
+
+            <Button
+                android:id="@+id/btConfirmarCadastro2"
+                style="?android:textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/action_pronto"
+                android:textStyle="bold"
+                android:backgroundTint="@color/colorAccent"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"/>
+
+            <Button
+                android:id="@+id/btVoltarCadastro2"
+                style="?android:textAppearanceSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/action_voltar"
+                android:textStyle="bold"
+                android:backgroundTint="@color/errorColor"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:trackTint="@color/Ensiso"
+                android:switchTextAppearance="@style/TextAppearance.AppCompat" />
+
+    <TextView
+        android:text="Por quantos períodos tranquei o curso?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColorPrimary"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+
+        android:id="@+id/textView3" />
+
+    <Spinner
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:id="@+id/spinnerQtdTrancado"
+        android:entries="@array/array_periodo_trancado"
+        style="@style/spinner_style"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="Quantas horas semanais eu dedico a Universidade?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColorPrimary"
+        android:layout_below="@+id/spinnerQtdTrancado"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView9" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textColor="@color/textColorPrimary"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBarHoras"
+        android:layout_alignParentStart="true"
+        android:id="@+id/txtSeekBar" />
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/txtSeekBar"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp" />
+
+
+
+    <SeekBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBarHoras"
+        android:max="20"
+        android:layout_below="@+id/textView9"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/textView9"
+        android:progress="5"
+        android:progressBackgroundTint="@color/cardview_dark_background" />
+
+</RelativeLayout>
